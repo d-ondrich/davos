@@ -4,6 +4,7 @@
 // needed to link rlibc since functions not called directly
 extern crate rlibc;
 
+mod vga_buffer;
 use core::panic::PanicInfo;
 
 // This function is called on panic.
@@ -26,3 +27,4 @@ pub extern "C" fn _start() -> ! {
 
     loop {}
 }
+
